@@ -1,0 +1,622 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/quartus/VLSI/DWT/FPGA/sim
+vcom
+Z1 !s110 1704620617
+!i10b 1
+!s100 [5zQlEVWgAfVNI?>`mTVg2
+IBT^0O1ok2gO?_7;1N_9i`1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1704287736
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/com.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/com.v
+L0 1
+Z3 OP;L;10.6c;65
+r1
+!s85 0
+31
+Z4 !s108 1704620877.000000
+!s107 E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_5.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_4.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_3_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_3.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_2_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_2.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_1_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_1.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/par_gen_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/par_gen.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/com.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/FIR_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/FIR_src_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/FIR_src.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/FIR.v|
+Z5 !s90 -reportprogress|300|E:/quartus/VLSI/DWT/FPGA/src/FIR/FIR.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/FIR_src.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/FIR_src_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/FIR_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/com.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/par_gen.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/par_gen_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_1.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_1_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_2.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_2_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_3.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_3_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_4.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_5.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_tb.v|
+!i113 1
+Z6 tCvgOpt 0
+vdata_gen
+Z7 !s110 1704620616
+!i10b 1
+!s100 2Ea7DLD3L=9jZSL5LfZc63
+I1^Sda:39k3b9T>ahSYZhX2
+R2
+R0
+w1704287444
+8E:/quartus/VLSI/DWT/FPGA/src/data_gen.v
+FE:/quartus/VLSI/DWT/FPGA/src/data_gen.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+Z8 !s107 E:/quartus/VLSI/DWT/FPGA/src/upsample.v|E:/quartus/VLSI/DWT/FPGA/src/downsample.v|E:/quartus/VLSI/DWT/FPGA/src/data_gen_tb.v|E:/quartus/VLSI/DWT/FPGA/src/data_gen.v|E:/quartus/VLSI/DWT/FPGA/src/DWT_tb.v|E:/quartus/VLSI/DWT/FPGA/src/DWT_4.v|E:/quartus/VLSI/DWT/FPGA/src/DWT_3.v|E:/quartus/VLSI/DWT/FPGA/src/DWT_2_tb.v|E:/quartus/VLSI/DWT/FPGA/src/DWT_2.v|E:/quartus/VLSI/DWT/FPGA/src/DWT_1_tb.v|E:/quartus/VLSI/DWT/FPGA/src/DWT_1.v|E:/quartus/VLSI/DWT/FPGA/src/DWT.v|
+Z9 !s90 -reportprogress|300|E:/quartus/VLSI/DWT/FPGA/src/DWT.v|E:/quartus/VLSI/DWT/FPGA/src/DWT_1.v|E:/quartus/VLSI/DWT/FPGA/src/DWT_1_tb.v|E:/quartus/VLSI/DWT/FPGA/src/DWT_2.v|E:/quartus/VLSI/DWT/FPGA/src/DWT_2_tb.v|E:/quartus/VLSI/DWT/FPGA/src/DWT_3.v|E:/quartus/VLSI/DWT/FPGA/src/DWT_4.v|E:/quartus/VLSI/DWT/FPGA/src/DWT_tb.v|E:/quartus/VLSI/DWT/FPGA/src/data_gen.v|E:/quartus/VLSI/DWT/FPGA/src/data_gen_tb.v|E:/quartus/VLSI/DWT/FPGA/src/downsample.v|E:/quartus/VLSI/DWT/FPGA/src/upsample.v|
+!i113 1
+R6
+vdownsample
+R7
+!i10b 1
+!s100 ;dDB3hQ^j1NUO@K2Q_Q>70
+Ib336oLVI^X1[k93Pf8QMo2
+R2
+R0
+w1704295060
+8E:/quartus/VLSI/DWT/FPGA/src/downsample.v
+FE:/quartus/VLSI/DWT/FPGA/src/downsample.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R8
+R9
+!i113 1
+R6
+vDWT
+R7
+!i10b 1
+!s100 eCfcPb^6HInfiShh^ilz=2
+I7M;G862hME<=E1h^aO05N0
+R2
+R0
+w1704620869
+8E:/quartus/VLSI/DWT/FPGA/src/DWT.v
+FE:/quartus/VLSI/DWT/FPGA/src/DWT.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R8
+R9
+!i113 1
+R6
+n@d@w@t
+vDWT_1
+R7
+!i10b 1
+!s100 e0c1NOdaTc?O6cD3U5o0N1
+Io5G>3[Mj`?oFGC7BSUQ971
+R2
+R0
+w1704301638
+8E:/quartus/VLSI/DWT/FPGA/src/DWT_1.v
+FE:/quartus/VLSI/DWT/FPGA/src/DWT_1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R8
+R9
+!i113 1
+R6
+n@d@w@t_1
+vDWT_2
+R7
+!i10b 1
+!s100 hJbm2M`hoH`oAh`4M>D5F1
+IJg`GfCZm2_VOihoQ]z85m2
+R2
+R0
+w1704306568
+8E:/quartus/VLSI/DWT/FPGA/src/DWT_2.v
+FE:/quartus/VLSI/DWT/FPGA/src/DWT_2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R8
+R9
+!i113 1
+R6
+n@d@w@t_2
+vDWT_3
+R7
+!i10b 1
+!s100 [?IbFdLidS8HYccSN6n693
+I>M?9IeU^1=f9<zmf3EoZo1
+R2
+R0
+w1704308913
+8E:/quartus/VLSI/DWT/FPGA/src/DWT_3.v
+FE:/quartus/VLSI/DWT/FPGA/src/DWT_3.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R8
+R9
+!i113 1
+R6
+n@d@w@t_3
+vDWT_4
+R7
+!i10b 1
+!s100 K4Q2Zb4ljETgNc8fF;f1>2
+Iz]=h4YVKfVR6bN:9onREM3
+R2
+R0
+w1704309668
+8E:/quartus/VLSI/DWT/FPGA/src/DWT_4.v
+FE:/quartus/VLSI/DWT/FPGA/src/DWT_4.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R8
+R9
+!i113 1
+R6
+n@d@w@t_4
+vFIR
+R1
+!i10b 1
+!s100 `;?lAGV3`:@D4Jcncbh412
+Ilm>CKbACACX43jjS=e?1X1
+R2
+R0
+w1704281404
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/FIR.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/FIR.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+Z10 !s107 E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_5.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_4.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_3_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_3.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_2_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_2.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_1_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_1.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/par_gen_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/par_gen.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/com.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/FIR_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/FIR_src_tb.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/FIR_src.v|E:/quartus/VLSI/DWT/FPGA/src/FIR/FIR.v|
+R5
+!i113 1
+R6
+n@f@i@r
+vFIR_src
+R1
+!i10b 1
+!s100 <;XH_zODlX[M<KI6hoZFO3
+IWTn<e_hHRBf7O;`JmkiQO1
+R2
+R0
+w1704307463
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/FIR_src.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/FIR_src.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R10
+R5
+!i113 1
+R6
+n@f@i@r_src
+vpar_gen
+R1
+!i10b 1
+!s100 <X3m?5?lWlnaa^ASZmV4Q2
+IfJdRcZKDDQD@6Bb5DfFem2
+R2
+R0
+w1704281508
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/par_gen.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/par_gen.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R10
+R5
+!i113 1
+R6
+vsignal_data
+R7
+!i10b 1
+!s100 D9bdS=Un;M;R_UQ56SBQ;0
+IgdIQ:[=AmB:klVRhS@fJ61
+R2
+R0
+w1704286690
+8E:/quartus/VLSI/DWT/FPGA/src/IP/signal_data.v
+FE:/quartus/VLSI/DWT/FPGA/src/IP/signal_data.v
+L0 39
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/quartus/VLSI/DWT/FPGA/src/IP/signal_data.v|
+!s90 -reportprogress|300|E:/quartus/VLSI/DWT/FPGA/src/IP/signal_data.v|
+!i113 1
+R6
+vtb_data_gen
+R7
+!i10b 1
+!s100 AT7[:Uh=U09Gk0KDZMY5T3
+IdfNO5fm__3RQP@MQRC;j;3
+R2
+R0
+w1704287179
+8E:/quartus/VLSI/DWT/FPGA/src/data_gen_tb.v
+FE:/quartus/VLSI/DWT/FPGA/src/data_gen_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R8
+R9
+!i113 1
+R6
+vtb_DWT
+R7
+!i10b 1
+!s100 k5eI=^C^mU@A^Y=Fo9K`B0
+I1W7UDLHTB6dceM[aUH9oG1
+R2
+R0
+w1704309574
+8E:/quartus/VLSI/DWT/FPGA/src/DWT_tb.v
+FE:/quartus/VLSI/DWT/FPGA/src/DWT_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R8
+R9
+!i113 1
+R6
+ntb_@d@w@t
+vtb_DWT_1
+R7
+!i10b 1
+!s100 XO86^n7Xf7R4Zf?VWMGiT3
+IYGolLilWT7`8Ki4PWFZ>;1
+R2
+R0
+w1704290681
+8E:/quartus/VLSI/DWT/FPGA/src/DWT_1_tb.v
+FE:/quartus/VLSI/DWT/FPGA/src/DWT_1_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R8
+R9
+!i113 1
+R6
+ntb_@d@w@t_1
+vtb_DWT_2
+R7
+!i10b 1
+!s100 E7b:^_hdzYGkd=Y4HCTDE0
+IUzL32>a3amOQ]BjbI::De1
+R2
+R0
+w1704296144
+8E:/quartus/VLSI/DWT/FPGA/src/DWT_2_tb.v
+FE:/quartus/VLSI/DWT/FPGA/src/DWT_2_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R8
+R9
+!i113 1
+R6
+ntb_@d@w@t_2
+vtb_FIR
+R1
+!i10b 1
+!s100 <:4M:FX7Xc9UBcm0Rh7`_3
+I_j^=QXb4ckW:ZMO@zi:lK3
+R2
+R0
+w1704282339
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/FIR_tb.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/FIR_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R10
+R5
+!i113 1
+R6
+ntb_@f@i@r
+vtb_FIR_src
+R1
+!i10b 1
+!s100 4b9l1BiZk4iC;7bUHT=SE3
+I22g13ABL]O:2c_]Y>G_zP0
+R2
+R0
+w1704281450
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/FIR_src_tb.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/FIR_src_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R10
+R5
+!i113 1
+R6
+ntb_@f@i@r_src
+vtb_par_gen
+R1
+!i10b 1
+!s100 YYE`0a@F?F_1IUA@GFV6o2
+I?LGYG5UX`nFC?f<KReF_c2
+R2
+R0
+w1704281523
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/par_gen_tb.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/par_gen_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R10
+R5
+!i113 1
+R6
+vtb_y_6k
+R1
+!i10b 1
+!s100 HC3fbfNOdA[DTeP0H@<zb1
+Iz]?3_8d`4_lWa^zU3E`TR0
+R2
+R0
+w1704281679
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_tb.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R10
+R5
+!i113 1
+R6
+vtb_y_6k_1
+R1
+!i10b 1
+!s100 dEEeQ@U6o1I?e@;NDW^GW2
+IGmPfB?Fk9M^zPjBiUQL8O3
+R2
+R0
+w1704280400
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_1_tb.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_1_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R10
+R5
+!i113 1
+R6
+vtb_y_6k_2
+R1
+!i10b 1
+!s100 7gbGcdaX1BgMY2f0nAkXJ0
+IY3X24AWTKADVJgQgLQ2ZG2
+R2
+R0
+w1704281584
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_2_tb.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_2_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R10
+R5
+!i113 1
+R6
+vtb_y_6k_3
+R1
+!i10b 1
+!s100 Y=]O`o>CA?R4lLI5ckCC53
+I^k3S9G7faNGE2LWXXo<@G2
+R2
+R0
+w1704281619
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_3_tb.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_3_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+R10
+R5
+!i113 1
+R6
+vupsample
+R7
+!i10b 1
+!s100 >a1OC4_h_36b9X2I_z^_o0
+I4em=h`[a0`H1k^j4[oJCz3
+R2
+R0
+w1704306640
+8E:/quartus/VLSI/DWT/FPGA/src/upsample.v
+FE:/quartus/VLSI/DWT/FPGA/src/upsample.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R8
+R9
+!i113 1
+R6
+vy_6k
+R1
+!i10b 1
+!s100 QCB]ZQkJ1QZhi[[[3`BMO0
+IBeIV<o=3hHEzNb^o1dCaW3
+R2
+R0
+w1704289499
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R10
+R5
+!i113 1
+R6
+vy_6k_1
+R1
+!i10b 1
+!s100 _:Z:T<dfAL3e4RDF2Zj6M2
+IZF]L8oXILZMA09PY7Dkg^2
+R2
+R0
+w1704287775
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_1.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R10
+R5
+!i113 1
+R6
+vy_6k_2
+R1
+!i10b 1
+!s100 3=[]oU9BJ0Q28i9`L2VA73
+IPU5Kb]KfDVMO2<;_dfE@J0
+R2
+R0
+w1704287782
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_2.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R10
+R5
+!i113 1
+R6
+vy_6k_3
+R1
+!i10b 1
+!s100 YQ=HoJgX>EiC_0SZi1O701
+Iz7eVCILcezPcgS8V_g0DK1
+R2
+R0
+w1704287789
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_3.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_3.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R10
+R5
+!i113 1
+R6
+vy_6k_4
+R1
+!i10b 1
+!s100 Ui:W:d:24e9eoIo2d4k_23
+IdTcHF12Sl:cRY7AfaK6eQ2
+R2
+R0
+w1704287796
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_4.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_4.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R10
+R5
+!i113 1
+R6
+vy_6k_5
+R1
+!i10b 1
+!s100 <?MLm5ODiPZ2J`<ZR1bT`0
+IA5I^LAI?Com]<`4VfNa<70
+R2
+R0
+w1704287803
+8E:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_5.v
+FE:/quartus/VLSI/DWT/FPGA/src/FIR/y_6k_5.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+R10
+R5
+!i113 1
+R6
