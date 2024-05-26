@@ -1,6 +1,0 @@
-<?xml version="1.0" ?>
-<LOG_ROOT>
-	<PROJECT NAME="DWT">
-		<CBX_INST_ENTRY INSTANCE_NAME="|DWT|DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_qab1.tdf"/>
-	</PROJECT>
-</LOG_ROOT>
