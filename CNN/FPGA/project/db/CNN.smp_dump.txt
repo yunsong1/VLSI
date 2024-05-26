@@ -1,0 +1,11 @@
+
+State Machine - |CNN|conv:u_conv|state
+Name state.ppp state.clr state.m_5 state.m_4 state.m_3 state.m_2 state.m_1 state.idle 
+state.idle 0 0 0 0 0 0 0 0 
+state.m_1 0 0 0 0 0 0 1 1 
+state.m_2 0 0 0 0 0 1 0 1 
+state.m_3 0 0 0 0 1 0 0 1 
+state.m_4 0 0 0 1 0 0 0 1 
+state.m_5 0 0 1 0 0 0 0 1 
+state.clr 0 1 0 0 0 0 0 1 
+state.ppp 1 0 0 0 0 0 0 1 

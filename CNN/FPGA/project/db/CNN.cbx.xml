@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="CNN">
+		<CBX_INST_ENTRY INSTANCE_NAME="|CNN|conv:u_conv|MULT_ACCUM:block1[2].MULT_ACCUM_inst|altmult_accum:altmult_accum_component" CBX_FILE_NAME="mult_accum_qk72.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CNN|conv:u_conv|MULT_ACCUM:block1[4].MULT_ACCUM_inst|altmult_accum:altmult_accum_component" CBX_FILE_NAME="mult_accum_qk72.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CNN|conv:u_conv|MULT_ACCUM:block1[1].MULT_ACCUM_inst|altmult_accum:altmult_accum_component" CBX_FILE_NAME="mult_accum_qk72.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CNN|conv:u_conv|MULT_ACCUM:block1[3].MULT_ACCUM_inst|altmult_accum:altmult_accum_component" CBX_FILE_NAME="mult_accum_qk72.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CNN|conv:u_conv|MULT_ACCUM:block1[5].MULT_ACCUM_inst|altmult_accum:altmult_accum_component" CBX_FILE_NAME="mult_accum_qk72.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CNN|gen_5_5:u_gen_5_5|CNN_windows:u_CNN_windows|altshift_taps:ALTSHIFT_TAPS_component" CBX_FILE_NAME="shift_taps_4nv.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CNN|gen_5_5:u_gen_5_5|IMAGE_ROM:u_IMAGE_ROM|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_tac1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CNN|maxpool:u_maxpool|gen_2_2:u_gen_2_2|Pool_fifo:u_Pool_fifo|scfifo:scfifo_component" CBX_FILE_NAME="scfifo_e141.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

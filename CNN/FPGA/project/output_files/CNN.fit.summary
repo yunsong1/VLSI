@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Jan 02 17:56:08 2024
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : CNN
+Top-level Entity Name : CNN
+Family : Cyclone III
+Device : EP3C16F484C6
+Timing Models : Final
+Total logic elements : 435 / 15,408 ( 3 % )
+    Total combinational functions : 416 / 15,408 ( 3 % )
+    Dedicated logic registers : 218 / 15,408 ( 1 % )
+Total registers : 218
+Total pins : 259 / 347 ( 75 % )
+Total virtual pins : 0
+Total memory bits : 10,566 / 516,096 ( 2 % )
+Embedded Multiplier 9-bit elements : 5 / 112 ( 4 % )
+Total PLLs : 0 / 4 ( 0 % )

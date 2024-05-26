@@ -1,0 +1,1232 @@
+Analysis & Synthesis report for DWT
+Thu Jan 04 03:32:23 2024
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Analysis & Synthesis IP Cores Summary
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Source assignments for DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component|altsyncram_qab1:auto_generated
+ 12. Parameter Settings for User Entity Instance: Top-level Entity: |DWT
+ 13. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1
+ 14. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component
+ 15. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1
+ 16. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1|par_gen:u_par_gen
+ 17. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1|FIR_src:u_FIR_src
+ 18. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1|y_6k:u_y_6k
+ 19. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1|y_6k_1:u_y_6k_1
+ 20. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1|y_6k_2:u_y_6k_2
+ 21. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1|com:com_gen[0].u_com
+ 22. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1|com:com_gen[1].u_com
+ 23. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1|com:com_gen[2].u_com
+ 24. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2
+ 25. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2|par_gen:u_par_gen
+ 26. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2|FIR_src:u_FIR_src
+ 27. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2|y_6k:u_y_6k
+ 28. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2|y_6k_1:u_y_6k_1
+ 29. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2|y_6k_2:u_y_6k_2
+ 30. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2|com:com_gen[0].u_com
+ 31. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2|com:com_gen[1].u_com
+ 32. Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2|com:com_gen[2].u_com
+ 33. Parameter Settings for User Entity Instance: downsample:u_downsample
+ 34. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2
+ 35. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D
+ 36. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D|par_gen:u_par_gen
+ 37. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D|FIR_src:u_FIR_src
+ 38. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D|y_6k:u_y_6k
+ 39. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D|y_6k_1:u_y_6k_1
+ 40. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D|y_6k_2:u_y_6k_2
+ 41. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D|com:com_gen[0].u_com
+ 42. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D|com:com_gen[1].u_com
+ 43. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D|com:com_gen[2].u_com
+ 44. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R
+ 45. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R|par_gen:u_par_gen
+ 46. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R|FIR_src:u_FIR_src
+ 47. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R|y_6k:u_y_6k
+ 48. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R|y_6k_1:u_y_6k_1
+ 49. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R|y_6k_2:u_y_6k_2
+ 50. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R|com:com_gen[0].u_com
+ 51. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R|com:com_gen[1].u_com
+ 52. Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R|com:com_gen[2].u_com
+ 53. Parameter Settings for User Entity Instance: downsample:u_downsample_2
+ 54. Parameter Settings for User Entity Instance: upsample:u_upsample
+ 55. Parameter Settings for User Entity Instance: DWT_3:u_DWT_3
+ 56. Parameter Settings for User Entity Instance: DWT_3:u_DWT_3|FIR_src:u_FIR_src
+ 57. Parameter Settings for User Entity Instance: upsample:u_upsample2
+ 58. Parameter Settings for User Entity Instance: DWT_4:u_DWT_4
+ 59. Parameter Settings for User Entity Instance: DWT_4:u_DWT_4|FIR_src:u_FIR_src
+ 60. altsyncram Parameter Settings by Entity Instance
+ 61. Port Connectivity Checks: "DWT_4:u_DWT_4"
+ 62. Port Connectivity Checks: "downsample:u_downsample_2"
+ 63. Port Connectivity Checks: "DWT_2:u_DWT_2|FIR:u_FIR_D|FIR_src:u_FIR_src"
+ 64. Port Connectivity Checks: "downsample:u_downsample"
+ 65. Port Connectivity Checks: "DWT_1:u_DWT_1|FIR:u_FIR_1|FIR_src:u_FIR_src"
+ 66. Elapsed Time Per Partition
+ 67. Analysis & Synthesis Messages
+ 68. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Jan 04 03:32:23 2024       ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
+; Revision Name                      ; DWT                                         ;
+; Top-level Entity Name              ; DWT                                         ;
+; Family                             ; Cyclone III                                 ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 2                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; DWT                ; DWT                ;
+; Family name                                                                ; Cyclone III        ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-12        ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                               ;
++------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path         ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                         ; Library ;
++------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------+---------+
+; src/DWT_4.v                              ; yes             ; User Verilog HDL File                  ; E:/quartus/VLSI/DWT/FPGA/project/src/DWT_4.v                         ;         ;
+; src/upsample.v                           ; yes             ; User Verilog HDL File                  ; E:/quartus/VLSI/DWT/FPGA/project/src/upsample.v                      ;         ;
+; src/DWT_3.v                              ; yes             ; User Verilog HDL File                  ; E:/quartus/VLSI/DWT/FPGA/project/src/DWT_3.v                         ;         ;
+; src/FIR/y_6k_2.v                         ; yes             ; User Verilog HDL File                  ; E:/quartus/VLSI/DWT/FPGA/project/src/FIR/y_6k_2.v                    ;         ;
+; src/FIR/y_6k_1.v                         ; yes             ; User Verilog HDL File                  ; E:/quartus/VLSI/DWT/FPGA/project/src/FIR/y_6k_1.v                    ;         ;
+; src/FIR/y_6k.v                           ; yes             ; User Verilog HDL File                  ; E:/quartus/VLSI/DWT/FPGA/project/src/FIR/y_6k.v                      ;         ;
+; src/FIR/par_gen.v                        ; yes             ; User Verilog HDL File                  ; E:/quartus/VLSI/DWT/FPGA/project/src/FIR/par_gen.v                   ;         ;
+; src/FIR/FIR_src.v                        ; yes             ; User Verilog HDL File                  ; E:/quartus/VLSI/DWT/FPGA/project/src/FIR/FIR_src.v                   ;         ;
+; src/FIR/FIR.v                            ; yes             ; User Verilog HDL File                  ; E:/quartus/VLSI/DWT/FPGA/project/src/FIR/FIR.v                       ;         ;
+; src/FIR/com.v                            ; yes             ; User Verilog HDL File                  ; E:/quartus/VLSI/DWT/FPGA/project/src/FIR/com.v                       ;         ;
+; src/DWT_2.v                              ; yes             ; User Verilog HDL File                  ; E:/quartus/VLSI/DWT/FPGA/project/src/DWT_2.v                         ;         ;
+; src/DWT_1.v                              ; yes             ; User Verilog HDL File                  ; E:/quartus/VLSI/DWT/FPGA/project/src/DWT_1.v                         ;         ;
+; src/DWT.v                                ; yes             ; User Verilog HDL File                  ; E:/quartus/VLSI/DWT/FPGA/project/src/DWT.v                           ;         ;
+; src/downsample.v                         ; yes             ; User Verilog HDL File                  ; E:/quartus/VLSI/DWT/FPGA/project/src/downsample.v                    ;         ;
+; src/data_gen.v                           ; yes             ; User Verilog HDL File                  ; E:/quartus/VLSI/DWT/FPGA/project/src/data_gen.v                      ;         ;
+; signal_data.v                            ; yes             ; User Wizard-Generated File             ; E:/quartus/VLSI/DWT/FPGA/project/signal_data.v                       ;         ;
+; altsyncram.tdf                           ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
+; stratix_ram_block.inc                    ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
+; lpm_mux.inc                              ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
+; lpm_decode.inc                           ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
+; aglobal131.inc                           ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc        ;         ;
+; a_rdenreg.inc                            ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
+; altrom.inc                               ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altrom.inc            ;         ;
+; altram.inc                               ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altram.inc            ;         ;
+; altdpram.inc                             ; yes             ; Megafunction                           ; d:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
+; db/altsyncram_qab1.tdf                   ; yes             ; Auto-Generated Megafunction            ; E:/quartus/VLSI/DWT/FPGA/project/db/altsyncram_qab1.tdf              ;         ;
+; /quartus/vlsi/dwt/matlab/signal_data.mif ; yes             ; Auto-Found Memory Initialization File  ; /quartus/vlsi/dwt/matlab/signal_data.mif                             ;         ;
++------------------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 2     ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 2     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |DWT                       ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 2    ; 0            ; |DWT                ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                             ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------------------+------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                                                  ; IP Include File                                ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------------------+------------------------------------------------+
+; Altera ; ROM: 1-PORT  ; 13.1    ; N/A          ; N/A          ; |DWT|DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data ; E:/quartus/VLSI/DWT/FPGA/project/signal_data.v ;
++--------+--------------+---------+--------------+--------------+------------------------------------------------------------------+------------------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Registers Removed During Synthesis                                   ;
++-------------------------------------------------+--------------------+
+; Register name                                   ; Reason for Removal ;
++-------------------------------------------------+--------------------+
+; DWT_1:u_DWT_1|data_gen:u_data_gen|address[0..7] ; Lost fanout        ;
+; Total Number of Removed Registers = 8           ;                    ;
++-------------------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component|altsyncram_qab1:auto_generated ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                                  ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                   ;
++---------------------------------+--------------------+------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |DWT ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; w_in           ; 9     ; Signed Integer                             ;
+; w_in_1         ; 25    ; Signed Integer                             ;
+; y_out          ; 25    ; Signed Integer                             ;
+; y_out_2        ; 40    ; Signed Integer                             ;
+; c_in           ; 9     ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; w_in           ; 9     ; Signed Integer                    ;
+; y_out          ; 25    ; Signed Integer                    ;
+; c_in           ; 9     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component ;
++------------------------------------+------------------------------+----------------------------------------------------------------------+
+; Parameter Name                     ; Value                        ; Type                                                                 ;
++------------------------------------+------------------------------+----------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                            ; Untyped                                                              ;
+; AUTO_CARRY_CHAINS                  ; ON                           ; AUTO_CARRY                                                           ;
+; IGNORE_CARRY_BUFFERS               ; OFF                          ; IGNORE_CARRY                                                         ;
+; AUTO_CASCADE_CHAINS                ; ON                           ; AUTO_CASCADE                                                         ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                          ; IGNORE_CASCADE                                                       ;
+; WIDTH_BYTEENA                      ; 1                            ; Untyped                                                              ;
+; OPERATION_MODE                     ; ROM                          ; Untyped                                                              ;
+; WIDTH_A                            ; 9                            ; Signed Integer                                                       ;
+; WIDTHAD_A                          ; 8                            ; Signed Integer                                                       ;
+; NUMWORDS_A                         ; 256                          ; Signed Integer                                                       ;
+; OUTDATA_REG_A                      ; UNREGISTERED                 ; Untyped                                                              ;
+; ADDRESS_ACLR_A                     ; NONE                         ; Untyped                                                              ;
+; OUTDATA_ACLR_A                     ; NONE                         ; Untyped                                                              ;
+; WRCONTROL_ACLR_A                   ; NONE                         ; Untyped                                                              ;
+; INDATA_ACLR_A                      ; NONE                         ; Untyped                                                              ;
+; BYTEENA_ACLR_A                     ; NONE                         ; Untyped                                                              ;
+; WIDTH_B                            ; 1                            ; Untyped                                                              ;
+; WIDTHAD_B                          ; 1                            ; Untyped                                                              ;
+; NUMWORDS_B                         ; 1                            ; Untyped                                                              ;
+; INDATA_REG_B                       ; CLOCK1                       ; Untyped                                                              ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                       ; Untyped                                                              ;
+; RDCONTROL_REG_B                    ; CLOCK1                       ; Untyped                                                              ;
+; ADDRESS_REG_B                      ; CLOCK1                       ; Untyped                                                              ;
+; OUTDATA_REG_B                      ; UNREGISTERED                 ; Untyped                                                              ;
+; BYTEENA_REG_B                      ; CLOCK1                       ; Untyped                                                              ;
+; INDATA_ACLR_B                      ; NONE                         ; Untyped                                                              ;
+; WRCONTROL_ACLR_B                   ; NONE                         ; Untyped                                                              ;
+; ADDRESS_ACLR_B                     ; NONE                         ; Untyped                                                              ;
+; OUTDATA_ACLR_B                     ; NONE                         ; Untyped                                                              ;
+; RDCONTROL_ACLR_B                   ; NONE                         ; Untyped                                                              ;
+; BYTEENA_ACLR_B                     ; NONE                         ; Untyped                                                              ;
+; WIDTH_BYTEENA_A                    ; 1                            ; Signed Integer                                                       ;
+; WIDTH_BYTEENA_B                    ; 1                            ; Untyped                                                              ;
+; RAM_BLOCK_TYPE                     ; AUTO                         ; Untyped                                                              ;
+; BYTE_SIZE                          ; 8                            ; Untyped                                                              ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                    ; Untyped                                                              ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ         ; Untyped                                                              ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ         ; Untyped                                                              ;
+; INIT_FILE                          ; ../../matlab/signal_data.mif ; Untyped                                                              ;
+; INIT_FILE_LAYOUT                   ; PORT_A                       ; Untyped                                                              ;
+; MAXIMUM_DEPTH                      ; 0                            ; Untyped                                                              ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                       ; Untyped                                                              ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                       ; Untyped                                                              ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                       ; Untyped                                                              ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                       ; Untyped                                                              ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN              ; Untyped                                                              ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN              ; Untyped                                                              ;
+; ENABLE_ECC                         ; FALSE                        ; Untyped                                                              ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                        ; Untyped                                                              ;
+; WIDTH_ECCSTATUS                    ; 3                            ; Untyped                                                              ;
+; DEVICE_FAMILY                      ; Cyclone III                  ; Untyped                                                              ;
+; CBXI_PARAMETER                     ; altsyncram_qab1              ; Untyped                                                              ;
++------------------------------------+------------------------------+----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                ;
+; y_out          ; 25    ; Signed Integer                                ;
+; c_in           ; 9     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1|par_gen:u_par_gen ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1|FIR_src:u_FIR_src ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                                  ;
+; y_out          ; 25    ; Signed Integer                                                  ;
+; c_in           ; 9     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1|y_6k:u_y_6k ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                            ;
+; y_out          ; 25    ; Signed Integer                                            ;
+; c_in           ; 9     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1|y_6k_1:u_y_6k_1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                                ;
+; y_out          ; 25    ; Signed Integer                                                ;
+; c_in           ; 9     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1|y_6k_2:u_y_6k_2 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                                ;
+; y_out          ; 25    ; Signed Integer                                                ;
+; c_in           ; 9     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1|com:com_gen[0].u_com ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                                     ;
+; y_out          ; 25    ; Signed Integer                                                     ;
+; c_in           ; 9     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1|com:com_gen[1].u_com ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                                     ;
+; y_out          ; 25    ; Signed Integer                                                     ;
+; c_in           ; 9     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_1|com:com_gen[2].u_com ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                                     ;
+; y_out          ; 25    ; Signed Integer                                                     ;
+; c_in           ; 9     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                ;
+; y_out          ; 25    ; Signed Integer                                ;
+; c_in           ; 9     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2|par_gen:u_par_gen ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2|FIR_src:u_FIR_src ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                                  ;
+; y_out          ; 25    ; Signed Integer                                                  ;
+; c_in           ; 9     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2|y_6k:u_y_6k ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                            ;
+; y_out          ; 25    ; Signed Integer                                            ;
+; c_in           ; 9     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2|y_6k_1:u_y_6k_1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                                ;
+; y_out          ; 25    ; Signed Integer                                                ;
+; c_in           ; 9     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2|y_6k_2:u_y_6k_2 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                                ;
+; y_out          ; 25    ; Signed Integer                                                ;
+; c_in           ; 9     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2|com:com_gen[0].u_com ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                                     ;
+; y_out          ; 25    ; Signed Integer                                                     ;
+; c_in           ; 9     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2|com:com_gen[1].u_com ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                                     ;
+; y_out          ; 25    ; Signed Integer                                                     ;
+; c_in           ; 9     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_1:u_DWT_1|FIR:u_FIR_2|com:com_gen[2].u_com ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; w_in           ; 9     ; Signed Integer                                                     ;
+; y_out          ; 25    ; Signed Integer                                                     ;
+; c_in           ; 9     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: downsample:u_downsample ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; y_out          ; 25    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; w_in           ; 25    ; Signed Integer                    ;
+; y_out          ; 40    ; Signed Integer                    ;
+; c_in           ; 9     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                ;
+; y_out          ; 40    ; Signed Integer                                ;
+; c_in           ; 9     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D|par_gen:u_par_gen ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D|FIR_src:u_FIR_src ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                                  ;
+; y_out          ; 40    ; Signed Integer                                                  ;
+; c_in           ; 9     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D|y_6k:u_y_6k ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                            ;
+; y_out          ; 40    ; Signed Integer                                            ;
+; c_in           ; 9     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D|y_6k_1:u_y_6k_1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                                ;
+; y_out          ; 40    ; Signed Integer                                                ;
+; c_in           ; 9     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D|y_6k_2:u_y_6k_2 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                                ;
+; y_out          ; 40    ; Signed Integer                                                ;
+; c_in           ; 9     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D|com:com_gen[0].u_com ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                                     ;
+; y_out          ; 40    ; Signed Integer                                                     ;
+; c_in           ; 9     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D|com:com_gen[1].u_com ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                                     ;
+; y_out          ; 40    ; Signed Integer                                                     ;
+; c_in           ; 9     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_D|com:com_gen[2].u_com ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                                     ;
+; y_out          ; 40    ; Signed Integer                                                     ;
+; c_in           ; 9     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                ;
+; y_out          ; 40    ; Signed Integer                                ;
+; c_in           ; 9     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R|par_gen:u_par_gen ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R|FIR_src:u_FIR_src ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                                  ;
+; y_out          ; 40    ; Signed Integer                                                  ;
+; c_in           ; 9     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R|y_6k:u_y_6k ;
++----------------+-------+-----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                      ;
++----------------+-------+-----------------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                            ;
+; y_out          ; 40    ; Signed Integer                                            ;
+; c_in           ; 9     ; Signed Integer                                            ;
++----------------+-------+-----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R|y_6k_1:u_y_6k_1 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                                ;
+; y_out          ; 40    ; Signed Integer                                                ;
+; c_in           ; 9     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R|y_6k_2:u_y_6k_2 ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                                ;
+; y_out          ; 40    ; Signed Integer                                                ;
+; c_in           ; 9     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R|com:com_gen[0].u_com ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                                     ;
+; y_out          ; 40    ; Signed Integer                                                     ;
+; c_in           ; 9     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R|com:com_gen[1].u_com ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                                     ;
+; y_out          ; 40    ; Signed Integer                                                     ;
+; c_in           ; 9     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_2:u_DWT_2|FIR:u_FIR_R|com:com_gen[2].u_com ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                                     ;
+; y_out          ; 40    ; Signed Integer                                                     ;
+; c_in           ; 9     ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: downsample:u_downsample_2 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; y_out          ; 40    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: upsample:u_upsample ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; w_in_1         ; 25    ; Signed Integer                          ;
+; y_out_2        ; 40    ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_3:u_DWT_3 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; w_in           ; 25    ; Signed Integer                    ;
+; y_out          ; 40    ; Signed Integer                    ;
+; c_in           ; 9     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_3:u_DWT_3|FIR_src:u_FIR_src ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                      ;
+; y_out          ; 40    ; Signed Integer                                      ;
+; c_in           ; 9     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: upsample:u_upsample2 ;
++----------------+-------+------------------------------------------+
+; Parameter Name ; Value ; Type                                     ;
++----------------+-------+------------------------------------------+
+; w_in_1         ; 25    ; Signed Integer                           ;
+; y_out_2        ; 40    ; Signed Integer                           ;
++----------------+-------+------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_4:u_DWT_4 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; w_in           ; 25    ; Signed Integer                    ;
+; y_out          ; 40    ; Signed Integer                    ;
+; c_in           ; 9     ; Signed Integer                    ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DWT_4:u_DWT_4|FIR_src:u_FIR_src ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; w_in           ; 25    ; Signed Integer                                      ;
+; y_out          ; 40    ; Signed Integer                                      ;
+; c_in           ; 9     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                                                                        ;
++-------------------------------------------+---------------------------------------------------------------------------------------------+
+; Name                                      ; Value                                                                                       ;
++-------------------------------------------+---------------------------------------------------------------------------------------------+
+; Number of entity instances                ; 1                                                                                           ;
+; Entity Instance                           ; DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                                                                         ;
+;     -- WIDTH_A                            ; 9                                                                                           ;
+;     -- NUMWORDS_A                         ; 256                                                                                         ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                                ;
+;     -- WIDTH_B                            ; 1                                                                                           ;
+;     -- NUMWORDS_B                         ; 1                                                                                           ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                      ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                                ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                        ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                   ;
++-------------------------------------------+---------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DWT_4:u_DWT_4"                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Lo_R1_c_y_k ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Lo_R1_valid ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "downsample:u_downsample_2"                                                                     ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Hi_D_y_down     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Hi_D_down_valid ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; down_clk        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DWT_2:u_DWT_2|FIR:u_FIR_D|FIR_src:u_FIR_src"                                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; y_k  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "downsample:u_downsample"                                                                       ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Hi_D_y_down     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; Hi_D_down_valid ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DWT_1:u_DWT_1|FIR:u_FIR_1|FIR_src:u_FIR_src"                                        ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; y_k  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+    Info: Processing started: Thu Jan 04 03:32:22 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DWT -c DWT
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file src/dwt_4.v
+    Info (12023): Found entity 1: DWT_4
+Info (12021): Found 1 design units, including 1 entities, in source file src/upsample.v
+    Info (12023): Found entity 1: upsample
+Info (12021): Found 1 design units, including 1 entities, in source file src/dwt_3.v
+    Info (12023): Found entity 1: DWT_3
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/y_6k_tb.v
+    Info (12023): Found entity 1: tb_y_6k
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/y_6k_5.v
+    Info (12023): Found entity 1: y_6k_5
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/y_6k_4.v
+    Info (12023): Found entity 1: y_6k_4
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/y_6k_3_tb.v
+    Info (12023): Found entity 1: tb_y_6k_3
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/y_6k_3.v
+    Info (12023): Found entity 1: y_6k_3
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/y_6k_2_tb.v
+    Info (12023): Found entity 1: tb_y_6k_2
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/y_6k_2.v
+    Info (12023): Found entity 1: y_6k_2
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/y_6k_1_tb.v
+    Info (12023): Found entity 1: tb_y_6k_1
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/y_6k_1.v
+    Info (12023): Found entity 1: y_6k_1
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/y_6k.v
+    Info (12023): Found entity 1: y_6k
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/par_gen_tb.v
+    Info (12023): Found entity 1: tb_par_gen
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/par_gen.v
+    Info (12023): Found entity 1: par_gen
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/fir_tb.v
+    Info (12023): Found entity 1: tb_FIR
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/fir_src_tb.v
+    Info (12023): Found entity 1: tb_FIR_src
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/fir_src.v
+    Info (12023): Found entity 1: FIR_src
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/fir.v
+    Info (12023): Found entity 1: FIR
+Info (12021): Found 1 design units, including 1 entities, in source file src/fir/com.v
+    Info (12023): Found entity 1: com
+Info (12021): Found 1 design units, including 1 entities, in source file src/dwt_tb.v
+    Info (12023): Found entity 1: tb_DWT
+Info (12021): Found 1 design units, including 1 entities, in source file src/dwt_2_tb.v
+    Info (12023): Found entity 1: tb_DWT_2
+Info (12021): Found 1 design units, including 1 entities, in source file src/dwt_2.v
+    Info (12023): Found entity 1: DWT_2
+Info (12021): Found 1 design units, including 1 entities, in source file src/dwt_1_tb.v
+    Info (12023): Found entity 1: tb_DWT_1
+Info (12021): Found 1 design units, including 1 entities, in source file src/dwt_1.v
+    Info (12023): Found entity 1: DWT_1
+Info (12021): Found 1 design units, including 1 entities, in source file src/dwt.v
+    Info (12023): Found entity 1: DWT
+Info (12021): Found 1 design units, including 1 entities, in source file src/downsample.v
+    Info (12023): Found entity 1: downsample
+Info (12021): Found 1 design units, including 1 entities, in source file src/data_gen_tb.v
+    Info (12023): Found entity 1: tb_data_gen
+Info (12021): Found 1 design units, including 1 entities, in source file src/data_gen.v
+    Info (12023): Found entity 1: data_gen
+Info (12021): Found 1 design units, including 1 entities, in source file signal_data.v
+    Info (12023): Found entity 1: signal_data
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_src.v(18): Parameter Declaration in module "FIR_src" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at FIR_src.v(19): Parameter Declaration in module "FIR_src" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at y_6k.v(21): Parameter Declaration in module "y_6k" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at y_6k.v(22): Parameter Declaration in module "y_6k" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at y_6k_5.v(21): Parameter Declaration in module "y_6k_5" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at y_6k_5.v(22): Parameter Declaration in module "y_6k_5" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at y_6k_4.v(21): Parameter Declaration in module "y_6k_4" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at y_6k_4.v(22): Parameter Declaration in module "y_6k_4" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at y_6k_3.v(21): Parameter Declaration in module "y_6k_3" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at y_6k_3.v(22): Parameter Declaration in module "y_6k_3" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at y_6k_2.v(21): Parameter Declaration in module "y_6k_2" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at y_6k_2.v(22): Parameter Declaration in module "y_6k_2" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at y_6k_1.v(21): Parameter Declaration in module "y_6k_1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at y_6k_1.v(22): Parameter Declaration in module "y_6k_1" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at com.v(21): Parameter Declaration in module "com" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at com.v(22): Parameter Declaration in module "com" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Info (12127): Elaborating entity "DWT" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at DWT.v(251): object "data4" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at DWT.v(89): truncated value with size 32 to match size of target (25)
+Info (12128): Elaborating entity "DWT_1" for hierarchy "DWT_1:u_DWT_1"
+Warning (10230): Verilog HDL assignment warning at DWT_1.v(51): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at DWT_1.v(53): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at DWT_1.v(54): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at DWT_1.v(99): truncated value with size 32 to match size of target (9)
+Info (12128): Elaborating entity "data_gen" for hierarchy "DWT_1:u_DWT_1|data_gen:u_data_gen"
+Warning (10230): Verilog HDL assignment warning at data_gen.v(25): truncated value with size 32 to match size of target (8)
+Info (12128): Elaborating entity "signal_data" for hierarchy "DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data"
+Info (12128): Elaborating entity "altsyncram" for hierarchy "DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component"
+Info (12130): Elaborated megafunction instantiation "DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component"
+Info (12133): Instantiated megafunction "DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component" with the following parameter:
+    Info (12134): Parameter "address_aclr_a" = "NONE"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "init_file" = "../../matlab/signal_data.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone III"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "operation_mode" = "ROM"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "width_a" = "9"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qab1.tdf
+    Info (12023): Found entity 1: altsyncram_qab1
+Info (12128): Elaborating entity "altsyncram_qab1" for hierarchy "DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component|altsyncram_qab1:auto_generated"
+Info (12128): Elaborating entity "FIR" for hierarchy "DWT_1:u_DWT_1|FIR:u_FIR_1"
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "x_com" into its bus
+Info (12128): Elaborating entity "par_gen" for hierarchy "DWT_1:u_DWT_1|FIR:u_FIR_1|par_gen:u_par_gen"
+Warning (10230): Verilog HDL assignment warning at par_gen.v(24): truncated value with size 32 to match size of target (3)
+Info (12128): Elaborating entity "FIR_src" for hierarchy "DWT_1:u_DWT_1|FIR:u_FIR_1|FIR_src:u_FIR_src"
+Info (12128): Elaborating entity "y_6k" for hierarchy "DWT_1:u_DWT_1|FIR:u_FIR_1|y_6k:u_y_6k"
+Info (12128): Elaborating entity "y_6k_1" for hierarchy "DWT_1:u_DWT_1|FIR:u_FIR_1|y_6k_1:u_y_6k_1"
+Info (12128): Elaborating entity "y_6k_2" for hierarchy "DWT_1:u_DWT_1|FIR:u_FIR_1|y_6k_2:u_y_6k_2"
+Info (12128): Elaborating entity "com" for hierarchy "DWT_1:u_DWT_1|FIR:u_FIR_1|com:com_gen[0].u_com"
+Info (12128): Elaborating entity "downsample" for hierarchy "downsample:u_downsample"
+Warning (10230): Verilog HDL assignment warning at downsample.v(37): truncated value with size 32 to match size of target (4)
+Info (12128): Elaborating entity "DWT_2" for hierarchy "DWT_2:u_DWT_2"
+Warning (10230): Verilog HDL assignment warning at DWT_2.v(41): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at DWT_2.v(43): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at DWT_2.v(44): truncated value with size 32 to match size of target (9)
+Warning (10230): Verilog HDL assignment warning at DWT_2.v(68): truncated value with size 32 to match size of target (9)
+Info (12128): Elaborating entity "FIR" for hierarchy "DWT_2:u_DWT_2|FIR:u_FIR_D"
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "x_com" into its bus
+Info (12128): Elaborating entity "par_gen" for hierarchy "DWT_2:u_DWT_2|FIR:u_FIR_D|par_gen:u_par_gen"
+Warning (10230): Verilog HDL assignment warning at par_gen.v(24): truncated value with size 32 to match size of target (3)
+Info (12128): Elaborating entity "FIR_src" for hierarchy "DWT_2:u_DWT_2|FIR:u_FIR_D|FIR_src:u_FIR_src"
+Warning (10230): Verilog HDL assignment warning at FIR_src.v(26): truncated value with size 25 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at FIR_src.v(27): truncated value with size 25 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at FIR_src.v(28): truncated value with size 25 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at FIR_src.v(29): truncated value with size 25 to match size of target (20)
+Info (12128): Elaborating entity "y_6k" for hierarchy "DWT_2:u_DWT_2|FIR:u_FIR_D|y_6k:u_y_6k"
+Warning (10230): Verilog HDL assignment warning at y_6k.v(29): truncated value with size 25 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at y_6k.v(30): truncated value with size 25 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at y_6k.v(31): truncated value with size 25 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at y_6k.v(32): truncated value with size 25 to match size of target (20)
+Info (12128): Elaborating entity "y_6k_1" for hierarchy "DWT_2:u_DWT_2|FIR:u_FIR_D|y_6k_1:u_y_6k_1"
+Warning (10230): Verilog HDL assignment warning at y_6k_1.v(29): truncated value with size 25 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at y_6k_1.v(30): truncated value with size 25 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at y_6k_1.v(31): truncated value with size 25 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at y_6k_1.v(32): truncated value with size 25 to match size of target (20)
+Info (12128): Elaborating entity "y_6k_2" for hierarchy "DWT_2:u_DWT_2|FIR:u_FIR_D|y_6k_2:u_y_6k_2"
+Warning (10230): Verilog HDL assignment warning at y_6k_2.v(29): truncated value with size 25 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at y_6k_2.v(30): truncated value with size 25 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at y_6k_2.v(31): truncated value with size 25 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at y_6k_2.v(32): truncated value with size 25 to match size of target (20)
+Info (12128): Elaborating entity "com" for hierarchy "DWT_2:u_DWT_2|FIR:u_FIR_D|com:com_gen[0].u_com"
+Warning (10230): Verilog HDL assignment warning at com.v(29): truncated value with size 25 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at com.v(30): truncated value with size 25 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at com.v(31): truncated value with size 25 to match size of target (20)
+Warning (10230): Verilog HDL assignment warning at com.v(32): truncated value with size 25 to match size of target (20)
+Info (12128): Elaborating entity "downsample" for hierarchy "downsample:u_downsample_2"
+Warning (10230): Verilog HDL assignment warning at downsample.v(37): truncated value with size 32 to match size of target (4)
+Info (12128): Elaborating entity "upsample" for hierarchy "upsample:u_upsample"
+Warning (10230): Verilog HDL assignment warning at upsample.v(31): truncated value with size 32 to match size of target (25)
+Info (12128): Elaborating entity "DWT_3" for hierarchy "DWT_3:u_DWT_3"
+Warning (10230): Verilog HDL assignment warning at DWT_3.v(28): truncated value with size 32 to match size of target (9)
+Info (12128): Elaborating entity "DWT_4" for hierarchy "DWT_4:u_DWT_4"
+Warning (10230): Verilog HDL assignment warning at DWT_4.v(28): truncated value with size 32 to match size of target (9)
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component|altsyncram_qab1:auto_generated|q_a[0]"
+        Warning (14320): Synthesized away node "DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component|altsyncram_qab1:auto_generated|q_a[1]"
+        Warning (14320): Synthesized away node "DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component|altsyncram_qab1:auto_generated|q_a[2]"
+        Warning (14320): Synthesized away node "DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component|altsyncram_qab1:auto_generated|q_a[3]"
+        Warning (14320): Synthesized away node "DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component|altsyncram_qab1:auto_generated|q_a[4]"
+        Warning (14320): Synthesized away node "DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component|altsyncram_qab1:auto_generated|q_a[5]"
+        Warning (14320): Synthesized away node "DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component|altsyncram_qab1:auto_generated|q_a[6]"
+        Warning (14320): Synthesized away node "DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component|altsyncram_qab1:auto_generated|q_a[7]"
+        Warning (14320): Synthesized away node "DWT_1:u_DWT_1|data_gen:u_data_gen|signal_data:u_signal_data|altsyncram:altsyncram_component|altsyncram_qab1:auto_generated|q_a[8]"
+Info (17049): 8 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file E:/quartus/VLSI/DWT/FPGA/project/output_files/DWT.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk"
+    Warning (15610): No output dependent on input pin "rstn"
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 68 warnings
+    Info: Peak virtual memory: 4658 megabytes
+    Info: Processing ended: Thu Jan 04 03:32:23 2024
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in E:/quartus/VLSI/DWT/FPGA/project/output_files/DWT.map.smsg.
+
+

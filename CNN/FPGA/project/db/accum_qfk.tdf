@@ -1,0 +1,54 @@
+--altaccumulate CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48 CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEVICE_FAMILY="Cyclone III" EXTRA_LATENCY=0 LPM_REPRESENTATION="SIGNED" WIDTH_IN=18 WIDTH_OUT=18 aclr clken clock data result
+--VERSION_BEGIN 13.1 cbx_altaccumulate 2013:10:23:18:05:48:SJ cbx_cycloneii 2013:10:23:18:05:48:SJ cbx_lpm_add_sub 2013:10:23:18:05:48:SJ cbx_mgl 2013:10:23:18:06:54:SJ cbx_stratix 2013:10:23:18:05:48:SJ cbx_stratixii 2013:10:23:18:05:48:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2013 Altera Corporation
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, Altera MegaCore Function License 
+--  Agreement, or other applicable license agreement, including, 
+--  without limitation, that your use is for the sole purpose of 
+--  programming logic devices manufactured by Altera and sold by 
+--  Altera or its authorized distributors.  Please refer to the 
+--  applicable agreement for further details.
+
+
+FUNCTION cycloneiii_lcell_comb (cin, dataa, datab, datac, datad)
+WITH ( DONT_TOUCH, LUT_MASK, SUM_LUTC_INPUT)
+RETURNS ( combout, cout);
+
+--synthesis_resources = lut 18 reg 18 
+SUBDESIGN accum_qfk
+( 
+	aclr	:	input;
+	clken	:	input;
+	clock	:	input;
+	data[17..0]	:	input;
+	result[17..0]	:	output;
+) 
+VARIABLE 
+	acc_cella[17..0] : cycloneiii_lcell_comb
+		WITH (
+			LUT_MASK = "96E8",
+			SUM_LUTC_INPUT = "cin"
+		);
+	acc_ffa[17..0] : dffe;
+	data_wire[17..0]	: WIRE;
+
+BEGIN 
+	acc_cella[].cin = ( acc_cella[16..0].cout, B"0");
+	acc_cella[].dataa = acc_ffa[].q;
+	acc_cella[].datab = data_wire[];
+	acc_cella[].datad = B"111111111111111111";
+	acc_ffa[].clk = clock;
+	acc_ffa[].clrn = (! aclr);
+	acc_ffa[].d = acc_cella[].combout;
+	acc_ffa[].ena = clken;
+	data_wire[] = data[];
+	result[] = acc_ffa[].q;
+END;
+--VALID FILE

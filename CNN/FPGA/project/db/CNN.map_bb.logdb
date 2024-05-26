@@ -1,0 +1,6 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,conv:u_conv|MULT_ACCUM:block1[5].MULT_ACCUM_inst|altmult_accum:altmult_accum_component|mult_accum_qk72:auto_generated|ded_mult_8s81:ded_mult1|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,conv:u_conv|MULT_ACCUM:block1[4].MULT_ACCUM_inst|altmult_accum:altmult_accum_component|mult_accum_qk72:auto_generated|ded_mult_8s81:ded_mult1|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,conv:u_conv|MULT_ACCUM:block1[3].MULT_ACCUM_inst|altmult_accum:altmult_accum_component|mult_accum_qk72:auto_generated|ded_mult_8s81:ded_mult1|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,conv:u_conv|MULT_ACCUM:block1[2].MULT_ACCUM_inst|altmult_accum:altmult_accum_component|mult_accum_qk72:auto_generated|ded_mult_8s81:ded_mult1|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,conv:u_conv|MULT_ACCUM:block1[1].MULT_ACCUM_inst|altmult_accum:altmult_accum_component|mult_accum_qk72:auto_generated|ded_mult_8s81:ded_mult1|mac_out4,

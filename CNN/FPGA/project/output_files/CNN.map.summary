@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Jan 02 17:55:57 2024
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : CNN
+Top-level Entity Name : CNN
+Family : Cyclone III
+Total logic elements : 424
+    Total combinational functions : 415
+    Dedicated logic registers : 218
+Total registers : 218
+Total pins : 259
+Total virtual pins : 0
+Total memory bits : 10,566
+Embedded Multiplier 9-bit elements : 5
+Total PLLs : 0

@@ -1,0 +1,554 @@
+ -- Copyright (C) 1991-2013 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		2.5V
+ --					Bank 2:		2.5V
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:		2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+CHIP  "CNN"  ASSIGNED TO AN: EP3C16F484C6
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+GND                          : A1        : gnd    :                   :         :           :                
+VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A4        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : A5        :        :                   :         : 8         :                
+weight_m_2[20]               : A6        : input  : 2.5 V             :         : 8         : N              
+weight_m_1[4]                : A7        : input  : 2.5 V             :         : 8         : N              
+weight_m_4[12]               : A8        : input  : 2.5 V             :         : 8         : N              
+weight_m_2[44]               : A9        : input  : 2.5 V             :         : 8         : N              
+weight_m_4[41]               : A10       : input  : 2.5 V             :         : 8         : N              
+GND+                         : A11       :        :                   :         : 8         :                
+GND+                         : A12       :        :                   :         : 7         :                
+weight_m_4[29]               : A13       : input  : 2.5 V             :         : 7         : N              
+weight_m_4[32]               : A14       : input  : 2.5 V             :         : 7         : N              
+weight_m_3[28]               : A15       : input  : 2.5 V             :         : 7         : N              
+weight_m_1[15]               : A16       : input  : 2.5 V             :         : 7         : N              
+weight_m_2[30]               : A17       : input  : 2.5 V             :         : 7         : N              
+weight_m_4[33]               : A18       : input  : 2.5 V             :         : 7         : N              
+weight_m_1[33]               : A19       : input  : 2.5 V             :         : 7         : N              
+weight_m_3[35]               : A20       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A21       : power  :                   : 2.5V    : 7         :                
+GND                          : A22       : gnd    :                   :         :           :                
+weight_m_3[11]               : AA1       : input  : 2.5 V             :         : 2         : N              
+conv_data[17]                : AA2       : output : 2.5 V             :         : 2         : N              
+weight_m_2[4]                : AA3       : input  : 2.5 V             :         : 3         : N              
+weight_m_4[3]                : AA4       : input  : 2.5 V             :         : 3         : N              
+weight_m_5[9]                : AA5       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AA6       : power  :                   : 2.5V    : 3         :                
+weight_m_2[7]                : AA7       : input  : 2.5 V             :         : 3         : N              
+weight_m_4[11]               : AA8       : input  : 2.5 V             :         : 3         : N              
+weight_m_5[36]               : AA9       : input  : 2.5 V             :         : 3         : N              
+weight_m_4[39]               : AA10      : input  : 2.5 V             :         : 3         : N              
+weight_m_1[16]               : AA11      : input  : 2.5 V             :         : 3         : N              
+weight_m_4[34]               : AA12      : input  : 2.5 V             :         : 4         : N              
+weight_m_1[30]               : AA13      : input  : 2.5 V             :         : 4         : N              
+weight_m_2[19]               : AA14      : input  : 2.5 V             :         : 4         : N              
+weight_m_3[7]                : AA15      : input  : 2.5 V             :         : 4         : N              
+weight_m_4[22]               : AA16      : input  : 2.5 V             :         : 4         : N              
+weight_m_5[28]               : AA17      : input  : 2.5 V             :         : 4         : N              
+weight_m_3[40]               : AA18      : input  : 2.5 V             :         : 4         : N              
+weight_m_2[5]                : AA19      : input  : 2.5 V             :         : 4         : N              
+weight_m_2[35]               : AA20      : input  : 2.5 V             :         : 4         : N              
+weight_m_3[41]               : AA21      : input  : 2.5 V             :         : 5         : N              
+weight_m_3[14]               : AA22      : input  : 2.5 V             :         : 5         : N              
+GND                          : AB1       : gnd    :                   :         :           :                
+VCCIO3                       : AB2       : power  :                   : 2.5V    : 3         :                
+weight_m_1[3]                : AB3       : input  : 2.5 V             :         : 3         : N              
+weight_m_1[43]               : AB4       : input  : 2.5 V             :         : 3         : N              
+weight_m_5[0]                : AB5       : input  : 2.5 V             :         : 3         : N              
+GND                          : AB6       : gnd    :                   :         :           :                
+weight_m_4[40]               : AB7       : input  : 2.5 V             :         : 3         : N              
+weight_m_2[38]               : AB8       : input  : 2.5 V             :         : 3         : N              
+weight_m_5[35]               : AB9       : input  : 2.5 V             :         : 3         : N              
+weight_m_2[11]               : AB10      : input  : 2.5 V             :         : 3         : N              
+weight_m_1[25]               : AB11      : input  : 2.5 V             :         : 3         : N              
+weight_m_4[43]               : AB12      : input  : 2.5 V             :         : 4         : N              
+weight_m_5[27]               : AB13      : input  : 2.5 V             :         : 4         : N              
+weight_m_2[28]               : AB14      : input  : 2.5 V             :         : 4         : N              
+weight_m_5[5]                : AB15      : input  : 2.5 V             :         : 4         : N              
+weight_m_5[19]               : AB16      : input  : 2.5 V             :         : 4         : N              
+weight_m_3[31]               : AB17      : input  : 2.5 V             :         : 4         : N              
+weight_m_2[18]               : AB18      : input  : 2.5 V             :         : 4         : N              
+weight_m_3[22]               : AB19      : input  : 2.5 V             :         : 4         : N              
+weight_m_2[26]               : AB20      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AB21      : power  :                   : 2.5V    : 4         :                
+GND                          : AB22      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B1        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B2        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B4        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B5        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B6        :        :                   :         : 8         :                
+weight_m_4[38]               : B7        : input  : 2.5 V             :         : 8         : N              
+weight_m_4[2]                : B8        : input  : 2.5 V             :         : 8         : N              
+weight_m_2[6]                : B9        : input  : 2.5 V             :         : 8         : N              
+weight_m_2[16]               : B10       : input  : 2.5 V             :         : 8         : N              
+GND+                         : B11       :        :                   :         : 8         :                
+GND+                         : B12       :        :                   :         : 7         :                
+weight_m_2[24]               : B13       : input  : 2.5 V             :         : 7         : N              
+weight_m_5[18]               : B14       : input  : 2.5 V             :         : 7         : N              
+weight_m_1[29]               : B15       : input  : 2.5 V             :         : 7         : N              
+weight_m_2[0]                : B16       : input  : 2.5 V             :         : 7         : N              
+weight_m_3[39]               : B17       : input  : 2.5 V             :         : 7         : N              
+weight_m_3[27]               : B18       : input  : 2.5 V             :         : 7         : N              
+weight_m_3[36]               : B19       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B20       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B21       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : B22       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C1        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C3        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C4        :        :                   :         : 8         :                
+GND                          : C5        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C8        :        :                   :         : 8         :                
+GND                          : C9        : gnd    :                   :         :           :                
+weight_m_4[7]                : C10       : input  : 2.5 V             :         : 8         : N              
+GND                          : C11       : gnd    :                   :         :           :                
+GND                          : C12       : gnd    :                   :         :           :                
+weight_m_1[31]               : C13       : input  : 2.5 V             :         : 7         : N              
+GND                          : C14       : gnd    :                   :         :           :                
+weight_m_5[2]                : C15       : input  : 2.5 V             :         : 7         : N              
+GND                          : C16       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C17       :        :                   :         : 7         :                
+GND                          : C18       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C19       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C20       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C21       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C22       :        :                   :         : 6         :                
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D1        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D2        :        :                   :         : 1         :                
+GND                          : D3        : gnd    :                   :         :           :                
+VCCIO1                       : D4        : power  :                   : 2.5V    : 1         :                
+VCCIO8                       : D5        : power  :                   : 2.5V    : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8         :                
+GND                          : D7        : gnd    :                   :         :           :                
+GND                          : D8        : gnd    :                   :         :           :                
+VCCIO8                       : D9        : power  :                   : 2.5V    : 8         :                
+weight_m_1[23]               : D10       : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : D11       : power  :                   : 2.5V    : 8         :                
+VCCIO7                       : D12       : power  :                   : 2.5V    : 7         :                
+weight_m_4[0]                : D13       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : D14       : power  :                   : 2.5V    : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D15       :        :                   :         : 7         :                
+VCCIO7                       : D16       : power  :                   : 2.5V    : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D17       :        :                   :         : 7         :                
+VCCIO7                       : D18       : power  :                   : 2.5V    : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D19       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D20       :        :                   :         : 6         :                
+weight_m_3[21]               : D21       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D22       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E1        :        :                   :         : 1         :                
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E4        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E5        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E6        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E7        :        :                   :         : 8         :                
+VCCIO8                       : E8        : power  :                   : 2.5V    : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E9        :        :                   :         : 8         :                
+weight_m_1[26]               : E10       : input  : 2.5 V             :         : 8         : N              
+weight_m_2[2]                : E11       : input  : 2.5 V             :         : 7         : N              
+weight_m_2[34]               : E12       : input  : 2.5 V             :         : 7         : N              
+weight_m_5[38]               : E13       : input  : 2.5 V             :         : 7         : N              
+weight_m_5[10]               : E14       : input  : 2.5 V             :         : 7         : N              
+weight_m_2[31]               : E15       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E16       :        :                   :         : 7         :                
+VCCD_PLL2                    : E17       : power  :                   : 1.2V    :           :                
+GNDA2                        : E18       : gnd    :                   :         :           :                
+VCCIO6                       : E19       : power  :                   : 2.5V    : 6         :                
+GND                          : E20       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : E21       :        :                   :         : 6         :                
+weight_m_5[16]               : E22       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F1        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F2        :        :                   :         : 1         :                
+GND                          : F3        : gnd    :                   :         :           :                
+VCCIO1                       : F4        : power  :                   : 2.5V    : 1         :                
+GNDA3                        : F5        : gnd    :                   :         :           :                
+VCCD_PLL3                    : F6        : power  :                   : 1.2V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F7        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F8        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F9        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F10       :        :                   :         : 8         :                
+weight_m_5[24]               : F11       : input  : 2.5 V             :         : 7         : N              
+weight_m_5[4]                : F12       : input  : 2.5 V             :         : 7         : N              
+weight_m_5[23]               : F13       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F14       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F15       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F16       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F17       :        :                   :         : 6         :                
+VCCA2                        : F18       : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F19       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F20       :        :                   :         : 6         :                
+weight_m_4[24]               : F21       : input  : 2.5 V             :         : 6         : N              
+weight_m_3[8]                : F22       : input  : 2.5 V             :         : 6         : N              
+rstn                         : G1        : input  : 2.5 V             :         : 1         : N              
+clk                          : G2        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G4        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G5        :        :                   :         : 1         :                
+VCCA3                        : G6        : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G7        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G8        :        :                   :         : 8         :                
+weight_m_5[30]               : G9        : input  : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G10       :        :                   :         : 8         :                
+weight_m_4[16]               : G11       : input  : 2.5 V             :         : 8         : N              
+weight_m_4[36]               : G12       : input  : 2.5 V             :         : 7         : N              
+weight_m_1[6]                : G13       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G14       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G15       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G16       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G17       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G18       :        :                   :         : 6         :                
+VCCIO6                       : G19       : power  :                   : 2.5V    : 6         :                
+GND                          : G20       : gnd    :                   :         :           :                
+weight_m_3[26]               : G21       : input  : 2.5 V             :         : 6         : N              
+weight_m_3[17]               : G22       : input  : 2.5 V             :         : 6         : N              
+bias[5]                      : H1        : input  : 2.5 V             :         : 1         : N              
+conv_valid                   : H2        : output : 2.5 V             :         : 1         : N              
+GND                          : H3        : gnd    :                   :         :           :                
+VCCIO1                       : H4        : power  :                   : 2.5V    : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H5        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H6        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H7        :        :                   :         : 1         :                
+GND                          : H8        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H9        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H10       :        :                   :         : 8         :                
+weight_m_5[42]               : H11       : input  : 2.5 V             :         : 8         : N              
+weight_m_3[1]                : H12       : input  : 2.5 V             :         : 7         : N              
+weight_m_5[34]               : H13       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H14       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H15       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H16       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H17       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H18       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : H19       :        :                   :         : 6         :                
+weight_m_2[12]               : H20       : input  : 2.5 V             :         : 6         : N              
+weight_m_1[8]                : H21       : input  : 2.5 V             :         : 6         : N              
+weight_m_3[2]                : H22       : input  : 2.5 V             :         : 6         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J1        :        :                   :         : 1         :                
+conv_data[4]                 : J2        : output : 2.5 V             :         : 1         : N              
+conv_data[7]                 : J3        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J4        :        :                   :         : 1         :                
+GND                          : J5        : gnd    :                   :         :           :                
+weight_m_3[30]               : J6        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : J7        :        :                   :         : 1         :                
+VCCINT                       : J8        : power  :                   : 1.2V    :           :                
+GND                          : J9        : gnd    :                   :         :           :                
+VCCINT                       : J10       : power  :                   : 1.2V    :           :                
+VCCINT                       : J11       : power  :                   : 1.2V    :           :                
+VCCINT                       : J12       : power  :                   : 1.2V    :           :                
+VCCINT                       : J13       : power  :                   : 1.2V    :           :                
+VCCINT                       : J14       : power  :                   : 1.2V    :           :                
+weight_m_2[41]               : J15       : input  : 2.5 V             :         : 6         : N              
+weight_m_5[37]               : J16       : input  : 2.5 V             :         : 6         : N              
+weight_m_3[12]               : J17       : input  : 2.5 V             :         : 6         : N              
+weight_m_5[13]               : J18       : input  : 2.5 V             :         : 6         : N              
+GND                          : J19       : gnd    :                   :         :           :                
+VCCIO6                       : J20       : power  :                   : 2.5V    : 6         :                
+weight_m_3[6]                : J21       : input  : 2.5 V             :         : 6         : N              
+weight_m_2[40]               : J22       : input  : 2.5 V             :         : 6         : N              
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : K1        : input  : 2.5 V             :         : 1         : N              
+~ALTERA_DCLK~                : K2        : output : 2.5 V             :         : 1         : N              
+GND                          : K3        : gnd    :                   :         :           :                
+VCCIO1                       : K4        : power  :                   : 2.5V    : 1         :                
+nCONFIG                      : K5        :        :                   :         : 1         :                
+nSTATUS                      : K6        :        :                   :         : 1         :                
+weight_m_3[16]               : K7        : input  : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : K8        :        :                   :         : 1         :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+GND                          : K10       : gnd    :                   :         :           :                
+GND                          : K11       : gnd    :                   :         :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+GND                          : K13       : gnd    :                   :         :           :                
+VCCINT                       : K14       : power  :                   : 1.2V    :           :                
+weight_m_5[1]                : K15       : input  : 2.5 V             :         : 6         : N              
+weight_m_1[22]               : K16       : input  : 2.5 V             :         : 6         : N              
+weight_m_2[3]                : K17       : input  : 2.5 V             :         : 6         : N              
+weight_m_1[35]               : K18       : input  : 2.5 V             :         : 6         : N              
+weight_m_1[9]                : K19       : input  : 2.5 V             :         : 6         : N              
+MSEL3                        : K20       :        :                   :         : 6         :                
+weight_m_2[21]               : K21       : input  : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : K22       : output : 2.5 V             :         : 6         : N              
+TMS                          : L1        : input  :                   :         : 1         :                
+TCK                          : L2        : input  :                   :         : 1         :                
+nCE                          : L3        :        :                   :         : 1         :                
+TDO                          : L4        : output :                   :         : 1         :                
+TDI                          : L5        : input  :                   :         : 1         :                
+weight_m_1[28]               : L6        : input  : 2.5 V             :         : 2         : N              
+weight_m_2[33]               : L7        : input  : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : L8        :        :                   :         : 1         :                
+VCCINT                       : L9        : power  :                   : 1.2V    :           :                
+GND                          : L10       : gnd    :                   :         :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+GND                          : L12       : gnd    :                   :         :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+weight_m_1[27]               : L15       : input  : 2.5 V             :         : 6         : N              
+weight_m_3[10]               : L16       : input  : 2.5 V             :         : 6         : N              
+MSEL2                        : L17       :        :                   :         : 6         :                
+MSEL1                        : L18       :        :                   :         : 6         :                
+VCCIO6                       : L19       : power  :                   : 2.5V    : 6         :                
+GND                          : L20       : gnd    :                   :         :           :                
+weight_m_5[8]                : L21       : input  : 2.5 V             :         : 6         : N              
+weight_m_1[38]               : L22       : input  : 2.5 V             :         : 6         : N              
+weight_m_5[29]               : M1        : input  : 2.5 V             :         : 2         : N              
+bias[3]                      : M2        : input  : 2.5 V             :         : 2         : N              
+weight_m_4[27]               : M3        : input  : 2.5 V             :         : 2         : N              
+weight_m_1[13]               : M4        : input  : 2.5 V             :         : 2         : N              
+weight_m_2[42]               : M5        : input  : 2.5 V             :         : 2         : N              
+weight_m_4[14]               : M6        : input  : 2.5 V             :         : 2         : N              
+weight_m_5[15]               : M7        : input  : 2.5 V             :         : 2         : N              
+weight_m_4[4]                : M8        : input  : 2.5 V             :         : 2         : N              
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GND                          : M10       : gnd    :                   :         :           :                
+GND                          : M11       : gnd    :                   :         :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+GND                          : M13       : gnd    :                   :         :           :                
+VCCINT                       : M14       : power  :                   : 1.2V    :           :                
+weight_m_4[10]               : M15       : input  : 2.5 V             :         : 5         : N              
+weight_m_1[18]               : M16       : input  : 2.5 V             :         : 5         : N              
+MSEL0                        : M17       :        :                   :         : 6         :                
+CONF_DONE                    : M18       :        :                   :         : 6         :                
+weight_m_5[20]               : M19       : input  : 2.5 V             :         : 5         : N              
+weight_m_2[32]               : M20       : input  : 2.5 V             :         : 5         : N              
+weight_m_4[1]                : M21       : input  : 2.5 V             :         : 5         : N              
+weight_m_3[24]               : M22       : input  : 2.5 V             :         : 5         : N              
+weight_m_5[3]                : N1        : input  : 2.5 V             :         : 2         : N              
+weight_m_2[25]               : N2        : input  : 2.5 V             :         : 2         : N              
+GND                          : N3        : gnd    :                   :         :           :                
+VCCIO2                       : N4        : power  :                   : 2.5V    : 2         :                
+bias[7]                      : N5        : input  : 2.5 V             :         : 2         : N              
+weight_m_1[5]                : N6        : input  : 2.5 V             :         : 2         : N              
+conv_data[3]                 : N7        : output : 2.5 V             :         : 2         : N              
+conv_data[8]                 : N8        : output : 2.5 V             :         : 2         : N              
+VCCINT                       : N9        : power  :                   : 1.2V    :           :                
+GND                          : N10       : gnd    :                   :         :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+GND                          : N12       : gnd    :                   :         :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+weight_m_5[22]               : N14       : input  : 2.5 V             :         : 5         : N              
+weight_m_3[18]               : N15       : input  : 2.5 V             :         : 5         : N              
+weight_m_1[0]                : N16       : input  : 2.5 V             :         : 5         : N              
+weight_m_5[26]               : N17       : input  : 2.5 V             :         : 5         : N              
+weight_m_4[21]               : N18       : input  : 2.5 V             :         : 5         : N              
+weight_m_3[38]               : N19       : input  : 2.5 V             :         : 5         : N              
+weight_m_4[18]               : N20       : input  : 2.5 V             :         : 5         : N              
+weight_m_4[42]               : N21       : input  : 2.5 V             :         : 5         : N              
+weight_m_1[20]               : N22       : input  : 2.5 V             :         : 5         : N              
+weight_m_4[13]               : P1        : input  : 2.5 V             :         : 2         : N              
+weight_m_1[36]               : P2        : input  : 2.5 V             :         : 2         : N              
+conv_data[13]                : P3        : output : 2.5 V             :         : 2         : N              
+conv_data[10]                : P4        : output : 2.5 V             :         : 2         : N              
+weight_m_5[33]               : P5        : input  : 2.5 V             :         : 2         : N              
+weight_m_5[7]                : P6        : input  : 2.5 V             :         : 2         : N              
+weight_m_1[40]               : P7        : input  : 2.5 V             :         : 2         : N              
+conv_data[12]                : P8        : output : 2.5 V             :         : 2         : N              
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+VCCINT                       : P10       : power  :                   : 1.2V    :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+VCCINT                       : P12       : power  :                   : 1.2V    :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+weight_m_3[43]               : P14       : input  : 2.5 V             :         : 5         : N              
+weight_m_2[39]               : P15       : input  : 2.5 V             :         : 5         : N              
+weight_m_3[15]               : P16       : input  : 2.5 V             :         : 5         : N              
+weight_m_2[27]               : P17       : input  : 2.5 V             :         : 5         : N              
+VCCIO5                       : P18       : power  :                   : 2.5V    : 5         :                
+GND                          : P19       : gnd    :                   :         :           :                
+weight_m_2[9]                : P20       : input  : 2.5 V             :         : 5         : N              
+weight_m_3[37]               : P21       : input  : 2.5 V             :         : 5         : N              
+weight_m_1[11]               : P22       : input  : 2.5 V             :         : 5         : N              
+conv_data[2]                 : R1        : output : 2.5 V             :         : 2         : N              
+conv_data[1]                 : R2        : output : 2.5 V             :         : 2         : N              
+GND                          : R3        : gnd    :                   :         :           :                
+VCCIO2                       : R4        : power  :                   : 2.5V    : 2         :                
+weight_m_4[25]               : R5        : input  : 2.5 V             :         : 2         : N              
+weight_m_4[30]               : R6        : input  : 2.5 V             :         : 2         : N              
+conv_data[11]                : R7        : output : 2.5 V             :         : 2         : N              
+conv_data[18]                : R8        : output : 2.5 V             :         : 2         : N              
+weight_m_2[29]               : R9        : input  : 2.5 V             :         : 3         : N              
+conv_data[9]                 : R10       : output : 2.5 V             :         : 3         : N              
+bias[6]                      : R11       : input  : 2.5 V             :         : 3         : N              
+weight_m_4[31]               : R12       : input  : 2.5 V             :         : 3         : N              
+weight_m_3[20]               : R13       : input  : 2.5 V             :         : 4         : N              
+weight_m_2[36]               : R14       : input  : 2.5 V             :         : 4         : N              
+weight_m_3[42]               : R15       : input  : 2.5 V             :         : 4         : N              
+weight_m_3[29]               : R16       : input  : 2.5 V             :         : 4         : N              
+weight_m_2[23]               : R17       : input  : 2.5 V             :         : 5         : N              
+weight_m_1[42]               : R18       : input  : 2.5 V             :         : 5         : N              
+weight_m_5[21]               : R19       : input  : 2.5 V             :         : 5         : N              
+weight_m_5[12]               : R20       : input  : 2.5 V             :         : 5         : N              
+weight_m_4[37]               : R21       : input  : 2.5 V             :         : 5         : N              
+weight_m_3[0]                : R22       : input  : 2.5 V             :         : 5         : N              
+bias[1]                      : T1        : input  : 2.5 V             :         : 2         : N              
+bias[0]                      : T2        : input  : 2.5 V             :         : 2         : N              
+bias[4]                      : T3        : input  : 2.5 V             :         : 2         : N              
+weight_m_5[43]               : T4        : input  : 2.5 V             :         : 2         : N              
+bias[2]                      : T5        : input  : 2.5 V             :         : 2         : N              
+VCCA1                        : T6        : power  :                   : 2.5V    :           :                
+conv_data[19]                : T7        : output : 2.5 V             :         : 2         : N              
+weight_m_2[17]               : T8        : input  : 2.5 V             :         : 3         : N              
+conv_data[21]                : T9        : output : 2.5 V             :         : 3         : N              
+weight_m_1[12]               : T10       : input  : 2.5 V             :         : 3         : N              
+weight_m_2[13]               : T11       : input  : 2.5 V             :         : 3         : N              
+weight_m_5[11]               : T12       : input  : 2.5 V             :         : 4         : N              
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+weight_m_4[15]               : T14       : input  : 2.5 V             :         : 4         : N              
+weight_m_3[3]                : T15       : input  : 2.5 V             :         : 4         : N              
+weight_m_3[33]               : T16       : input  : 2.5 V             :         : 4         : N              
+weight_m_3[23]               : T17       : input  : 2.5 V             :         : 5         : N              
+weight_m_2[22]               : T18       : input  : 2.5 V             :         : 5         : N              
+VCCIO5                       : T19       : power  :                   : 2.5V    : 5         :                
+GND                          : T20       : gnd    :                   :         :           :                
+weight_m_3[34]               : T21       : input  : 2.5 V             :         : 5         : N              
+weight_m_3[25]               : T22       : input  : 2.5 V             :         : 5         : N              
+weight_m_1[44]               : U1        : input  : 2.5 V             :         : 2         : N              
+weight_m_1[34]               : U2        : input  : 2.5 V             :         : 2         : N              
+GND                          : U3        : gnd    :                   :         :           :                
+VCCIO2                       : U4        : power  :                   : 2.5V    : 2         :                
+GNDA1                        : U5        : gnd    :                   :         :           :                
+VCCD_PLL1                    : U6        : power  :                   : 1.2V    :           :                
+conv_data[14]                : U7        : output : 2.5 V             :         : 3         : N              
+bias[8]                      : U8        : input  : 2.5 V             :         : 3         : N              
+weight_m_4[23]               : U9        : input  : 2.5 V             :         : 3         : N              
+weight_m_4[5]                : U10       : input  : 2.5 V             :         : 3         : N              
+weight_m_4[44]               : U11       : input  : 2.5 V             :         : 3         : N              
+weight_m_5[32]               : U12       : input  : 2.5 V             :         : 4         : N              
+weight_m_3[4]                : U13       : input  : 2.5 V             :         : 4         : N              
+weight_m_2[14]               : U14       : input  : 2.5 V             :         : 4         : N              
+weight_m_5[17]               : U15       : input  : 2.5 V             :         : 4         : N              
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+VCCINT                       : U17       : power  :                   : 1.2V    :           :                
+VCCA4                        : U18       : power  :                   : 2.5V    :           :                
+weight_m_5[25]               : U19       : input  : 2.5 V             :         : 5         : N              
+weight_m_4[26]               : U20       : input  : 2.5 V             :         : 5         : N              
+weight_m_5[6]                : U21       : input  : 2.5 V             :         : 5         : N              
+weight_m_5[31]               : U22       : input  : 2.5 V             :         : 5         : N              
+weight_m_4[9]                : V1        : input  : 2.5 V             :         : 2         : N              
+weight_m_3[19]               : V2        : input  : 2.5 V             :         : 2         : N              
+weight_m_1[32]               : V3        : input  : 2.5 V             :         : 2         : N              
+conv_data[15]                : V4        : output : 2.5 V             :         : 2         : N              
+conv_data[0]                 : V5        : output : 2.5 V             :         : 3         : N              
+conv_data[5]                 : V6        : output : 2.5 V             :         : 3         : N              
+weight_m_4[8]                : V7        : input  : 2.5 V             :         : 3         : N              
+weight_m_1[1]                : V8        : input  : 2.5 V             :         : 3         : N              
+weight_m_1[7]                : V9        : input  : 2.5 V             :         : 3         : N              
+weight_m_5[44]               : V10       : input  : 2.5 V             :         : 3         : N              
+weight_m_1[14]               : V11       : input  : 2.5 V             :         : 3         : N              
+weight_m_1[21]               : V12       : input  : 2.5 V             :         : 4         : N              
+weight_m_4[35]               : V13       : input  : 2.5 V             :         : 4         : N              
+weight_m_5[41]               : V14       : input  : 2.5 V             :         : 4         : N              
+weight_m_3[5]                : V15       : input  : 2.5 V             :         : 4         : N              
+weight_m_1[2]                : V16       : input  : 2.5 V             :         : 4         : N              
+VCCD_PLL4                    : V17       : power  :                   : 1.2V    :           :                
+GNDA4                        : V18       : gnd    :                   :         :           :                
+VCCIO5                       : V19       : power  :                   : 2.5V    : 5         :                
+GND                          : V20       : gnd    :                   :         :           :                
+weight_m_3[9]                : V21       : input  : 2.5 V             :         : 5         : N              
+weight_m_4[19]               : V22       : input  : 2.5 V             :         : 5         : N              
+conv_data[6]                 : W1        : output : 2.5 V             :         : 2         : N              
+weight_m_4[17]               : W2        : input  : 2.5 V             :         : 2         : N              
+GND                          : W3        : gnd    :                   :         :           :                
+VCCIO2                       : W4        : power  :                   : 2.5V    : 2         :                
+VCCIO3                       : W5        : power  :                   : 2.5V    : 3         :                
+weight_m_1[41]               : W6        : input  : 2.5 V             :         : 3         : N              
+weight_m_1[39]               : W7        : input  : 2.5 V             :         : 3         : N              
+weight_m_2[15]               : W8        : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : W9        : power  :                   : 2.5V    : 3         :                
+weight_m_2[8]                : W10       : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : W11       : power  :                   : 2.5V    : 3         :                
+VCCIO4                       : W12       : power  :                   : 2.5V    : 4         :                
+weight_m_5[14]               : W13       : input  : 2.5 V             :         : 4         : N              
+weight_m_3[13]               : W14       : input  : 2.5 V             :         : 4         : N              
+weight_m_5[39]               : W15       : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : W16       : power  :                   : 2.5V    : 4         :                
+weight_m_1[17]               : W17       : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : W18       : power  :                   : 2.5V    : 4         :                
+weight_m_4[20]               : W19       : input  : 2.5 V             :         : 5         : N              
+weight_m_4[28]               : W20       : input  : 2.5 V             :         : 5         : N              
+weight_m_5[40]               : W21       : input  : 2.5 V             :         : 5         : N              
+weight_m_4[6]                : W22       : input  : 2.5 V             :         : 5         : N              
+weight_m_2[1]                : Y1        : input  : 2.5 V             :         : 2         : N              
+conv_data[20]                : Y2        : output : 2.5 V             :         : 2         : N              
+weight_m_2[10]               : Y3        : input  : 2.5 V             :         : 3         : N              
+conv_data[16]                : Y4        : output : 2.5 V             :         : 3         : N              
+GND                          : Y5        : gnd    :                   :         :           :                
+weight_m_2[37]               : Y6        : input  : 2.5 V             :         : 3         : N              
+weight_m_2[43]               : Y7        : input  : 2.5 V             :         : 3         : N              
+weight_m_1[10]               : Y8        : input  : 2.5 V             :         : 3         : N              
+GND                          : Y9        : gnd    :                   :         :           :                
+weight_m_1[37]               : Y10       : input  : 2.5 V             :         : 3         : N              
+GND                          : Y11       : gnd    :                   :         :           :                
+GND                          : Y12       : gnd    :                   :         :           :                
+weight_m_3[32]               : Y13       : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : Y14       : power  :                   : 2.5V    : 4         :                
+GND                          : Y15       : gnd    :                   :         :           :                
+GND                          : Y16       : gnd    :                   :         :           :                
+weight_m_1[24]               : Y17       : input  : 2.5 V             :         : 4         : N              
+GND                          : Y18       : gnd    :                   :         :           :                
+VCCIO5                       : Y19       : power  :                   : 2.5V    : 5         :                
+GND                          : Y20       : gnd    :                   :         :           :                
+weight_m_3[44]               : Y21       : input  : 2.5 V             :         : 5         : N              
+weight_m_1[19]               : Y22       : input  : 2.5 V             :         : 5         : N              
